@@ -5,18 +5,18 @@ public interface IoHandler {
      * Callback interface on what to do when a socket is opened
      * @param session
      */
-    void onSocketOpen(final IoStateSession session);
+    void onSocketOpen(final IoSession session);
 
     /**
      * callback on what to do when a socket is closed
      * @param session
      */
-    void onSocketClose(final IoStateSession session);
+    void onSocketClose(final IoSession session);
 
     /**
      * Callback when a message is recieved
      * @param session
      * @param message
      */
-    void onMessage(final IoStateSession session,final byte[] message);
+    void onMessage(final IoSession session, final byte[] message);
 }

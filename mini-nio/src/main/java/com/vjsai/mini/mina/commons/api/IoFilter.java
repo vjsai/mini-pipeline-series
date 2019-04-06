@@ -12,7 +12,7 @@ public interface IoFilter {
      * @return
      * @throws IOException
      */
-    byte[] filterReceive(IoStateSession session, byte[] filterBytes) throws  IOException;
+    byte[] filterReceive(IoSession session, byte[] filterBytes) throws  IOException;
 
     /**
      * write Filter
@@ -22,7 +22,7 @@ public interface IoFilter {
      * @throws NioBaseWriteException
      * @throws IOException
      */
-    byte[] writeFilter(IoStateSession session, byte[] writeBytes) throws NioBaseWriteException, IOException;
+    byte[] writeFilter(IoSession session, byte[] writeBytes) throws NioBaseWriteException, IOException;
 
     /**
      * Removes the filter

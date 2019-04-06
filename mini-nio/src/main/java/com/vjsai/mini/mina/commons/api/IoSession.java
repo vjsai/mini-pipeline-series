@@ -4,7 +4,7 @@ import com.vjsai.mini.mina.exceptions.NioBaseWriteException;
 
 import java.io.IOException;
 
-public interface IoStateSession {
+public interface IoSession {
     /**
      * get unique identifier for session id
      * @return
